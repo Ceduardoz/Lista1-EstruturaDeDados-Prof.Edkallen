@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-// Função para calcular e imprimir o fatorial normal
+//calcular e imprimir o fatorial normal
 void fatorial(int n, int *resultado) {
     *resultado = 1;
     for (int i = 2; i <= n; i++) {
         *resultado *= i;
-        if (*resultado < 0) { // Verifica overflow
+        if (*resultado < 0) {
             printf("Erro: Overflow ao calcular fatorial de %d.\n", n);
             *resultado = -1;
             return;
@@ -13,12 +13,12 @@ void fatorial(int n, int *resultado) {
     }
 }
 
-// Função para calcular e imprimir o fatorial duplo
+//calcular e imprimir o fatorial duplo
 void fatorial_duplo(int n, int *resultado) {
     *resultado = 1;
     for (int i = n; i >= 1; i -= 2) {
         *resultado *= i;
-        if (*resultado < 0) { // Verifica overflow
+        if (*resultado < 0) { 
             printf("Erro: Overflow ao calcular fatorial duplo de %d.\n", n);
             *resultado = -1;
             return;
@@ -26,7 +26,6 @@ void fatorial_duplo(int n, int *resultado) {
     }
 }
 
-// Função principal
 int main() {
     int inicio = 2, fim = 10; 
     int fatoriais[fim - inicio + 1];
@@ -46,12 +45,12 @@ int main() {
     fprintf(arquivo, "%-10s %-15s %-15s %-15s\n", "n", "Fatorial", "Fatorial Duplo", "Diferença");
     fprintf(arquivo, "-------------------------------------------------------------\n");
 
-    //colocando nos arrays e exibindo os valores
+    //arrays e exibindo os valores
     for (int n = inicio; n <= fim; n++) {
         fatorial(n, &fatoriais[n - inicio]);
         fatorial_duplo(n, &fatoriais_duplos[n - inicio]);
 
-        // Se houve overflow, ignora esse valor
+        //se tiver overflow, ignora esse valor
         if (fatoriais[n - inicio] == -1 || fatoriais_duplos[n - inicio] == -1) {
             continue;
         }
