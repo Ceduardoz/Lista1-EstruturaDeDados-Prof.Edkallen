@@ -1,6 +1,11 @@
+/*
+Função: Potenciais Fatoriais
+Autor: Carlos Eduardo Barbosa Alves
+Data:07/04/2025
+*/
+
 #include <stdio.h>
 
-//calcular a soma dos divisoress
 void soma_numeros(int num, int *soma) {
     *soma = 0;
 
@@ -14,7 +19,6 @@ void soma_numeros(int num, int *soma) {
     printf("\nSoma dos divisores de %d: %d\n", num, *soma);
 }
 
-//verificar se são amigáveis
 void verifica_numeros(int a, int b) {
     int somaA, somaB;
 
@@ -23,7 +27,6 @@ void verifica_numeros(int a, int b) {
     soma_numeros(a, &somaA);
     soma_numeros(b, &somaB);
 
-    // Verifica se são amigáveis
     if (somaA == b && somaB == a) {
         printf("Os números %d e %d são amigáveis!\n", a, b);
     } else {

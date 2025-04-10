@@ -1,6 +1,11 @@
+/*
+Função: Potenciais Fatoriais
+Autor: Carlos Eduardo Barbosa Alves
+Data:06/04/2025
+Observações: Usei o chatGPT para deixar a exibição mais bonita no terminal e acabou que ele fez a mesma coisa no arquivo txt, e usei para aprender como transformar em um arquivo txt
+*/
 #include <stdio.h>
 
-//calcular e imprimir a potência fatorial crescente
 void potencia_fatorial_crescente(int x, int n, FILE *arquivo) {
     int resultado = 1;
     for (int i = 0; i < n; i++) {
@@ -10,7 +15,6 @@ void potencia_fatorial_crescente(int x, int n, FILE *arquivo) {
     fprintf(arquivo, "%-5d %-20d", n, resultado);
 }
 
-//calcular e imprimir a potência fatorial decrescente
 void potencia_fatorial_decrescente(int x, int n, FILE *arquivo) {
     int resultado = 1;
     for (int i = 0; i < n; i++) {
@@ -24,20 +28,17 @@ int main() {
     int x, n, i, j;
     FILE *arquivo; 
 
-    //abrir o arquivo para escrita
     arquivo = fopen("questao1.txt", "w");
     if (arquivo == NULL) {
         printf("Erro ao abrir o arquivo!\n");
         return 1;
     }
 
-    //entrada do usuário
     printf("Digite um valor para x (base): ");
     scanf("%d", &x);
     printf("Digite um valor para n (expoente fatorial): ");
     scanf("%d", &n);
 
-    //exibir no terminal
     printf("\nTabela para x fixo (x = %d) e n variando de 2 a %d:\n", x, n);
     fprintf(arquivo, "Tabela para x fixo (x = %d) e n variando de 2 a %d:\n", x, n);
     
@@ -52,7 +53,6 @@ int main() {
         potencia_fatorial_decrescente(x, i, arquivo);
     }
 
-    //escrever no arquivo txt
     printf("\nTabela para n fixo (n = %d) e x variando de 2 a %d:\n", n, x);
     fprintf(arquivo, "\nTabela para n fixo (n = %d) e x variando de 2 a %d:\n", n, x);
     
@@ -70,7 +70,6 @@ int main() {
         potencia_fatorial_decrescente(j, n, arquivo);
     }
 
-    //fechar o arquivo
     fclose(arquivo);
 
     printf("\nResultados foram salvos em 'questao.txt'\n");
