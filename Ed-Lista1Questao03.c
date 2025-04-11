@@ -1,5 +1,5 @@
 /*
-Função: Potenciais Fatoriais
+Função: Soma dos Divisores Amigáveis
 Autor: Carlos Eduardo Barbosa Alves
 Data:07/04/2025
 */

@@ -1,5 +1,5 @@
 /*
-Função: Potenciais Fatoriais
+Função: Permutação Circular
 Autor: Carlos Eduardo Barbosa Alves
 Data:10/04/2025
 */

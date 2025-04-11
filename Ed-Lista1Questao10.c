@@ -1,5 +1,5 @@
 /*
-Função: Potenciais Fatoriais
+Função: Série de Fibonacci com Restrição Máxima
 Autor: Carlos Eduardo Barbosa Alves
 Data:10/04/2025
 */

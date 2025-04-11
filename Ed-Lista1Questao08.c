@@ -1,5 +1,5 @@
 /*
-Função: Potenciais Fatoriais
+Função: Números de Armstrong
 Autor: Carlos Eduardo Barbosa Alves
 Data:08/04/2025
 */

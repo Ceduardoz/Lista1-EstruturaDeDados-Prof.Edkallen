@@ -1,5 +1,5 @@
 /*
-Função: Potenciais Fatoriais
+Função: Fatorial Duplo
 Autor: Carlos Eduardo Barbosa Alves
 Data:06/04/2025
 Observações: Usei o chatGPT para deixar a exibição mais bonita no terminal e acabou que ele fez a mesma coisa no arquivo txt

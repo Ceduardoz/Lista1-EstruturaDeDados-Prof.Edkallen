@@ -1,5 +1,5 @@
 /*
-Função: Potenciais Fatoriais
+Função: Números Automórfico
 Autor: Carlos Eduardo Barbosa Alves
 Data:07/04/2025
 */

@@ -1,5 +1,5 @@
 /*
-Função: Potenciais Fatoriais
+Função: Número de Carmichael
 Autor: Carlos Eduardo Barbosa Alves
 Data:08/04/2025
 Observações: o chatGPT ajudou pois tive dificuldades de entender a expreção e inicar as funções

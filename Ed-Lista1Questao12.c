@@ -1,5 +1,5 @@
 /*
-Função: Potenciais Fatoriais
+Função:: Crescimento Populacional (opcional) Adaptado por Neilor Tonin, URI Brasil 
 Autor: Carlos Eduardo Barbosa Alves
 Data:10/04/2025
 Observações: Fiz usando total o chatGPT pois não compreendi muito na hora de iniciar, fiz no intuito de aprender e decidi mandar mesmo assim 
